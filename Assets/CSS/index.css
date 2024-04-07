@@ -15,8 +15,6 @@
 body{
     color: var(--p-fn-color);
     width: 100%;
-    margin: 0;
-    padding: 0;
     background-color: var(--p-bg-color);
     display: flex;
     flex-direction: column;
