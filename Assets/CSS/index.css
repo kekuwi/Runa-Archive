@@ -15,7 +15,6 @@
 body{
     color: var(--p-fn-color);
     width: 100%;
-    background-color: var(--p-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +37,27 @@ section{
     justify-content: space-evenly;
 }
 
+p{  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    }
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 2rem;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+a{
+    color: var(--extra);
+    margin: 16px;
+    text-decoration: none;
+}
+
 /*//////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////// Class ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
@@ -47,9 +67,12 @@ section{
     align-items: center;
 }
 .flex{display: flex;}
+.flex-row{flex-direction: row;}
+.flex-column{flex-direction: column;}
+
 .navbar{
     color: var(--p-fn-color);
-    width: 100%;
+    width:100%;
     height: 3rem;
     background-color: var(--s-bg-color);
     display: flex;
@@ -59,25 +82,38 @@ section{
 
 .navbar div{margin: 1rem;}
 
-.carousel{
-    margin: 2rem;
-    width: 854px;
-    height: 480px;
-    background-color: var(--extra);
-    border-radius: 1rem;
+.hero{
+    width: 100%;
+    background-color: var(--p-bg-color);
+}
+
+.hero-notice{
+    /* width: 1120px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: linear-gradient(var(--p-bg-color), var(--s-bg-color));
+    border-radius: 1rem; */
+}
+
+.hero-mid{
+    width: 60%;
+}
+.hero img{
+    width: 20%;
 }
 
 .item-category{
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     background-color: var(--extra);
-    margin: 2rem;
+    
     border-radius: 1rem;
 }
 
 .about-us{flex-direction: column;}
 .profile{
-    width: 70 vw;
+    width: 70%;
     display: flex;
     flex-direction: row;
 }
