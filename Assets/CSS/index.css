@@ -41,7 +41,7 @@ p{
     font-weight: 400;
     font-size: 16px;
     line-height: 170%;
-    }
+}
 h1{
     font-size: 36px;
     font-weight: bold;
@@ -50,7 +50,6 @@ h1{
 h2{
     font-size: 24px;
     font-weight: bold;
-
 }
 a{
     color: var(--extra);
