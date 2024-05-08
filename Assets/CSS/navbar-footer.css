@@ -1,3 +1,11 @@
+.flex-center{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.flex{display: flex;}
+.flex-row{flex-direction: row;}
+.flex-column{flex-direction: column;}
 
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// navbar ///////////////////////////////*/

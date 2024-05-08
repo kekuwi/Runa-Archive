@@ -53,17 +53,6 @@ hr{opacity: 0;}
 /*//////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////// Class ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
-.flex-center{
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-.flex{display: flex;}
-.flex-row{flex-direction: row;}
-.flex-column{flex-direction: column;}
-
-
-
 .hero{
     width: 100%;
     background-color: var(--p-bg-color);
