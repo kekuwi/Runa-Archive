@@ -1,0 +1,54 @@
+.flex-center{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.flex{display: flex;}
+.flex-row{flex-direction: row;}
+.flex-column{flex-direction: column;}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////// navbar ///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 2rem;
+}
+
+.navbar{
+    color: var(--p-fn-color);
+    width:100%;
+    height: 3rem;
+    background-color: var(--s-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar div{margin: 1rem;}
+
+a{
+    color: var(--extra);
+    margin: 16px;
+    text-decoration: none;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////// footer ///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+footer{
+    width: 100%;
+    padding: 4rem 0;
+}
+.ft-social-media{
+    margin: 0 4rem;
+}
+.ft-social-name{
+    align-items: end;
+    justify-content: center;
+    gap: 32px;
+}
+.social-icon{
+    width: 24px;
+    height: 24px;
+    background-color: var(--extra);
+}
