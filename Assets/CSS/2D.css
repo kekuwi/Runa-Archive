@@ -51,35 +51,41 @@ h3{
 }
 
 .category{
-    width: 60%;
+    width: auto;
     margin: 2rem;
-    gap: 2rem;
+    gap: 1vw;
+    align-items: center;
 }
 .category-item{
     color: var(--extra);
-    font-size: 1.5rem;
-    width: 9rem;
-    height: 3rem;
+    font-size: 1.5vw;
+    width: 8vw;
+    height: 2.4vw;
     background: none;
-    border: 0.18rem solid var(--extra);
+    border: 0.16vw solid var(--extra);
     border-radius: 9999px;
 }
+.category-buttons{
+    gap: 0.5vw;
+}
+
 .active-category{
     color: var(--s-bg-color);
-    font-size: 1.5rem;
-    width: 9rem;
-    height: 3rem;
+    font-size: 1.5vw;
+    width: 8vw;
+    height: 2.4vw;
     background-color: var(--extra);
-    border: 0.18rem solid var(--s-bg-color);
+    border: 0.16vw solid var(--s-bg-color);
     border-radius: 9999px;
 }
 
 .list{
-    width: 60%;
+    width: 60vw;
     margin: 2rem;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 .card-container{
     justify-content: space-between;
@@ -87,6 +93,7 @@ h3{
     height: 16rem;
     width: 12rem;
     padding: 1.5rem;
+    margin: 1rem 0;
     background-color: var(--s-bg-color);
     border-radius: 1.5rem;
 }
