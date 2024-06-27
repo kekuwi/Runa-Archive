@@ -1,3 +1,11 @@
+:root{
+    --p-bg-color: #2A2A2A;
+    --s-bg-color: #1e1e1e;
+    --p-fn-color: #ededed;
+    --s-fn-color: #b3b3b3;
+    --extra: #e6ddc1;
+}
+
 .flex-center{
     flex: 1;
     justify-content: center;
@@ -6,6 +14,11 @@
 .flex{display: flex;}
 .flex-row{flex-direction: row;}
 .flex-column{flex-direction: column;}
+.flex-space{
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// navbar ///////////////////////////////*/
