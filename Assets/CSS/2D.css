@@ -96,7 +96,13 @@ h3{
     margin: 1rem 0;
     background-color: var(--s-bg-color);
     border-radius: 1.5rem;
+    transition-duration: 200ms;
 }
+.card-container:hover{
+    scale: 1.1;
+    transition-duration: 200ms;
+}
+
 .image-container{
     width: 12rem;
     height: 12rem;
