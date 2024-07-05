@@ -82,7 +82,7 @@ h3{
 .list{
     width: 60vw;
     margin: 2rem;
-    height: auto;
+    min-height: 80vh;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
