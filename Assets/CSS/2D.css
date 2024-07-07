@@ -65,6 +65,9 @@ h3{
     border: 0.16vw solid var(--extra);
     border-radius: 9999px;
 }
+.category-item:active{
+    scale: 0.9;
+}
 .category-buttons{
     gap: 0.5vw;
 }
@@ -82,7 +85,7 @@ h3{
 .list{
     width: 60vw;
     margin: 2rem;
-    height: auto;
+    min-height: 80vh;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
@@ -90,7 +93,7 @@ h3{
 .card-container{
     justify-content: space-between;
     /* align-items: center; */
-    height: 16rem;
+    height: 17rem;
     width: 12rem;
     padding: 1.5rem;
     margin: 1rem 0;
