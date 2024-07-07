@@ -7,6 +7,7 @@ fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/2D.json')
         //container
         let container = document.createElement("a"); 
             container.href = (i.Url);
+            container.target = ("_blank");
             container.classList.add("card-container", "flex", "flex-column");
     
         //image container
