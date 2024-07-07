@@ -95,8 +95,8 @@ hr{opacity: 0;}
     gap: 4rem;
 }
 .item-category{
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 15vw;
+    height: 15vw;
     margin: 0;
     position: relative;
 }
