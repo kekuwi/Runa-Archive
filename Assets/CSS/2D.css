@@ -38,9 +38,9 @@ h2{
 }
 
 h3{
-    font-size: 1.3rem;
     font-weight: bold;
 }
+p{font-size: small;}
 
 /*//////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////// Class ///////////////////////////////*/
@@ -85,20 +85,20 @@ h3{
 .list{
     width: 60vw;
     margin: 2rem;
-    min-height: 80vh;
+    min-height: 100vh;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0rem 2.5rem;
 }
 .card-container{
     justify-content: space-between;
-    /* align-items: center; */
-    height: 17rem;
-    width: 12rem;
-    padding: 1.5rem;
+    height: auto;
+    width: 10.2rem;
+    padding: 1rem;
     margin: 1rem 0;
     background-color: var(--s-bg-color);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
     transition-duration: 200ms;
 }
 .card-container:hover{
@@ -107,8 +107,8 @@ h3{
 }
 
 .image-container{
-    width: 12rem;
-    height: 12rem;
+    width: 100%;
+    height: 10rem;
     display: block;
     position: relative;
 }
@@ -122,6 +122,7 @@ h3{
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
 }
 .card-text{
     color: var(--p-fn-color);
