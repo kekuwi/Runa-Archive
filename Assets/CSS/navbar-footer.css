@@ -51,12 +51,13 @@ a{
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// footer ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
+h2{
+    height: 40px;
+}
 footer{
     width: 100%;
+    justify-content: center;
     padding: 2rem 0;
-}
-.ft-social-media{
-    margin: 0 4rem;
 }
 .social-name{
     justify-self: end;
@@ -67,4 +68,12 @@ footer{
     height: 24px;
     border-radius: 0.5rem;
     display: block;
+}
+footer a{
+    margin: 8px;
+}
+
+#footer{
+    width: 70%;
+    justify-content: space-between;
 }

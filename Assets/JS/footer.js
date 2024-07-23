@@ -3,18 +3,17 @@ let leftSide = document.createElement("div");
     leftSide.classList.add("ft-social-media", "flex", "flex-row");
     
 let rightSide = document.createElement("div");
-    rightSide.classList.add("flex", "flex-collumn", "flex-center");
+    rightSide.classList.add("ft-archive", "flex", "flex-column");
     
 // left Side
 let nameContainer = document.createElement("div");
-    nameContainer.classList.add("flex", "flex-column", "flex-right");
+    nameContainer.classList.add("flex", "flex-column", "flex-right", "flex-center");
     
 let kekuwiName = document.createElement("h2");
-    kekuwiName.classList.add("social-name")
-    kekuwiName.innerText = "kekuwi";
+    kekuwiName.innerText = ("kekuwi");
 
 let runaName = document.createElement("h2");
-    runaName.innerText = "Runabun";
+    runaName.innerText = ("Runabun");
 
 
     // Socials
@@ -60,7 +59,7 @@ let runaName = document.createElement("h2");
     };
 
     let socialContainer = document.createElement("div");
-        socialContainer.classList.add("flex", "flex-column");
+        socialContainer.classList.add("flex", "flex-column", "flex-center");
     let kekuwiSocialContainer = document.createElement("div");
         kekuwiSocialContainer.classList.add("flex", "flex-row");  
     let runaSocialContainer = document.createElement("div");
@@ -91,6 +90,21 @@ let runaName = document.createElement("h2");
         };
     };
 
+// Right side
+let archiveName = document.createElement("h2");
+    archiveName.innerText = ("Runa's Archive");
+
+let feedbackLink = document.createElement("a");
+    feedbackLink.innerText = ("Feedback");
+    feedbackLink.href = ("https://github.com/kekuwi/Runa-Archive/issues/new");
+
+let projectLink = document.createElement("a");
+    projectLink.innerText = ("Repository");
+    projectLink.href = ("https://github.com/kekuwi/Runa-Archive");
+
+let listLink = document.createElement("a");
+    listLink.innerText = ("Edit");
+    listLink.href = ("https://github.com/kekuwi/RA-Edit");
 
 // Assign
 document.getElementById("footer").appendChild(leftSide);
@@ -103,3 +117,7 @@ nameContainer.appendChild(runaName);
 socialContainer.appendChild(kekuwiSocialContainer);
 socialContainer.appendChild(runaSocialContainer);
 
+rightSide.appendChild(archiveName);
+rightSide.appendChild(feedbackLink);
+rightSide.appendChild(projectLink);
+rightSide.appendChild(listLink);
