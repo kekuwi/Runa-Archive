@@ -19,6 +19,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.flex-right{
+    align-items: end;
+}
 
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// navbar ///////////////////////////////*/
@@ -48,20 +51,29 @@ a{
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// footer ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
+h2{
+    height: 40px;
+}
 footer{
     width: 100%;
-    padding: 4rem 0;
-}
-.ft-social-media{
-    margin: 0 4rem;
-}
-.ft-social-name{
-    align-items: end;
     justify-content: center;
-    gap: 32px;
+    padding: 2rem 0;
+}
+.social-name{
+    justify-self: end;
+    margin: 16px 0;
 }
 .social-icon{
     width: 24px;
     height: 24px;
-    background-color: var(--extra);
+    border-radius: 0.5rem;
+    display: block;
+}
+footer a{
+    margin: 8px;
+}
+
+#footer{
+    width: 70%;
+    justify-content: space-between;
 }
