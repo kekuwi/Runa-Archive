@@ -106,6 +106,8 @@ let listLink = document.createElement("a");
     listLink.innerText = ("Edit");
     listLink.href = ("https://github.com/kekuwi/RA-Edit");
 
+    
+
 // Assign
 document.getElementById("footer").appendChild(leftSide);
 document.getElementById("footer").appendChild(rightSide);
