@@ -24,6 +24,6 @@ navbar.appendChild(navLink);
 
 logoLink.appendChild(logo);
 
-navLink.appendChild(discordLink)
+navLink.appendChild(discordLink);
 
 document.body.appendChild(navbar);
