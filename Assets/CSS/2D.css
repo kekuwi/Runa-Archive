@@ -127,4 +127,9 @@ p{font-size: small;}
 .card-text{
     color: var(--p-fn-color);
     text-align: left;
+hr{
+    width: 80vw;
+    border-top: 0.15rem solid var(--extra);
+    border-radius: 9999px;
+}
 }
