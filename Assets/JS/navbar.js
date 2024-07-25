@@ -5,7 +5,7 @@ let navbar = document.createElement("header");
 // title logo
 let logoLink = document.createElement("a");
     logoLink.style = ("color: var(--p-fn-color)");
-    logoLink.href = ("./index");
+    logoLink.href = ("./");
     
 let logo = document.createElement("h1");
     logo.innerText = ("Runa's Archive");
