@@ -127,9 +127,35 @@ p{font-size: small;}
 .card-text{
     color: var(--p-fn-color);
     text-align: left;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////// Filter ///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
 hr{
     width: 80vw;
     border-top: 0.15rem solid var(--extra);
     border-radius: 9999px;
 }
+
+.filter{
+    width: 60vw;
 }
+
+.filter-list{
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    display: inline-block;
+    background-color: skyblue;
+    border-radius: 1rem;
+    z-index: 1;
+    bottom: 12%;
+    left: 10%;
+}
+
+.filter-text:hover + .hide{
+    display: inline-block;
+}
+
+.hide{display: none;}
