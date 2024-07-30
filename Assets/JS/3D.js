@@ -1,5 +1,4 @@
 fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/3D.json')
-fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/2D.json')
 .then((response) => {
     return response.json();
 }).then(function(obj) {
