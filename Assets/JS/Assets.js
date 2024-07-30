@@ -1,4 +1,5 @@
 fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/Assets.json')
+fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/2D.json')
 .then((response) => {
     return response.json();
 }).then(function(obj) {
@@ -7,7 +8,7 @@ fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/Assets.json')
         //container
         let container = document.createElement("a"); 
             container.href = (i.Url);
-            container.target = ("_blank");  
+            container.target = ("_blank");
             container.classList.add("card-container", "flex", "flex-column");
     
         //image container
@@ -38,7 +39,21 @@ fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/Assets.json')
             cardText.appendChild(description);
         
         document.getElementById("list").appendChild(container);
-    }
+    };
+
+    //Filter
+    let tags = obj.data.filter((item, index) => { //remove duplicated tag
+        return index === obj.data.findIndex((obj) => {
+            return item.Tags === obj.Tags;
+        })
+    });
+
+    for (let i of tags) {
+        let tag = document.createElement("button");
+            tag.innerText = i.Tags;
+            document.getElementById("filter-list").appendChild(tag)
+    };
+
 }).catch(function(error) {
     console.error('something went wrong with the JSON');
     console.error(error);

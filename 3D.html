@@ -40,6 +40,15 @@
                     <button class="category-item">WIP</button>
                 </div>
             </div>
+            <div class="filter flex flex-row flex-left">
+                <h3 class="filter-text" onclick="filterPopUp()" style="cursor: pointer;">Filters: </h3>
+                <div class="filter-popup hide" id="filter-popup">
+                    <div class="filter-overlay" onclick="filterPopUp()"></div>
+                    <div class="filter-list flex flex-column" id="filter-list">
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div class="list flex flex-row" id="list"></div>
         </div>
     </section>
