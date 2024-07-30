@@ -40,12 +40,19 @@
                 </div>
             </div>
             <div class="filter flex flex-row flex-left">
-                <h3 class="filter-text">Filters: </h3>
-                <div class="filter-list hide">
-                    <input type="checkbox" name="making" id="making">
-                    <label for="making">making</label>
-                    <input type="checkbox" name="tracking" id="tracking">
-                    <label for="tracking">tracking</label>
+                <h3 class="filter-text" onclick="filterPopUp()">Filters: </h3>
+                <div class="filter-popup hide" id="filter-popup">
+                    <div class="filter-overlay" onclick="filterPopUp()"></div>
+                    <div class="filter-list flex flex-column">
+                        <div>
+                            <input type="checkbox" name="making" id="making">
+                            <label for="making">making</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tracking" id="tracking">
+                            <label for="tracking">tracking</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -58,7 +65,8 @@
             <script src="Assets/JS/footer.js"></script>
         </div>
     </footer>
-    
+
+    <script src="Assets/JS/filter.js"></script>
     <script src="Assets/JS/2D.js"></script>
 </body>
 </html>

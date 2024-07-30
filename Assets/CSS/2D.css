@@ -142,20 +142,36 @@ hr{
     width: 60vw;
 }
 
-.filter-list{
-    width: 60vw;
-    height: 60vh;
-    position: absolute;
-    display: inline-block;
-    background-color: skyblue;
-    border-radius: 1rem;
+.filter-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
     z-index: 1;
-    bottom: 12%;
-    left: 10%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.filter-text:hover + .hide{
-    display: inline-block;
+.filter-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 20vw;
+    min-height: 20vh;
+    max-width: 60vw;
+    max-height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e1e1e;
+    padding: 1rem;
+    z-index: 2;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.hide{display: none;}
+.hide{
+    display: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
