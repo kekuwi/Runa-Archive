@@ -8,7 +8,7 @@ fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/3D.json')
         let container = document.createElement("a"); 
             container.href = (i.Url);
             container.target = ("_blank");
-            container.classList.add("card-container", "flex", "flex-column");
+            container.classList.add("card-container", "flex", "flex-column", i.Tags);
     
         //image container
         let imgContainer = document.createElement("div");
@@ -50,6 +50,7 @@ fetch('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/3D.json')
     for (let i of tags) {
         let tag = document.createElement("button");
             tag.innerText = i.Tags;
+            tag.setAttribute("onclick", ("filter(" + i.Tags + ")"));
             document.getElementById("filter-list").appendChild(tag)
     };
 
