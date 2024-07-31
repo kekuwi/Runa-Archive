@@ -12,7 +12,7 @@ function hideAllCard() {
 
 function filter(tag) {
     hideAllCard();
-    let selector = tag.innerHTML;
+    let selector = tag.innerHTML; // take out filter slector needed
     let filter = document.getElementsByClassName(selector);
 
     for (const i of filter) {
