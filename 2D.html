@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="Assets/CSS/navbar-footer.css">
     <link rel="stylesheet" href="Assets/CSS/2D.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="Assets/favicon/site.webmanifest">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLTHBY6S85"></script>
@@ -39,6 +39,16 @@
                     <button class="category-item">WIP</button>
                 </div>
             </div>
+            <div class="filter flex flex-row flex-left">
+                <h3 class="filter-text" onclick="filterPopUp()" style="cursor: pointer;">Filters: </h3>
+                <p id="selected-filter"></p>
+                <div class="filter-popup hide" id="filter-popup">
+                    <div class="filter-overlay" onclick="filterPopUp()"></div>
+                    <div class="filter-list flex flex-column" id="filter-list">
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div class="list flex flex-row" id="list"></div>
         </div>
     </section>
@@ -48,7 +58,9 @@
             <script src="Assets/JS/footer.js"></script>
         </div>
     </footer>
-    
-    <script src="Assets/JS/2D.js"></script>
+
+    <script src="Assets/JS/filter.js"></script>
+    <script src="Assets/JS/List.js"></script>
+    <script>createList('https://raw.githubusercontent.com/kekuwi/RA-Edit/main/2D.json')</script>
 </body>
 </html>
