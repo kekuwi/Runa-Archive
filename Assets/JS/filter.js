@@ -12,10 +12,18 @@ function hideAllCard() {
 
 function filter(tag) {
     hideAllCard();
-    let selector = tag.innerHTML; // take out filter slector needed
+    let selector = tag.id; // take out filter slector needed
     let filter = document.getElementsByClassName(selector);
 
     for (const i of filter) {
         i.classList.toggle("hide");
     };
 };
+
+function normalizeString(string) {
+    let myString = string;
+    let stringWithoutSlash = myString.replace(/\//g, '');
+    let stringWithoutSpace = stringWithoutSlash.replace(/\s+/g, '');
+    let stringWithoutDash = stringWithoutSpace.replace(/-/g, '');
+    return stringWithoutDash;
+} ;

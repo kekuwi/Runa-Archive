@@ -9,7 +9,7 @@ function createList(uri){
             let container = document.createElement("a"); 
                 container.href = (i.Url);
                 container.target = ("_blank");
-                container.classList.add("card-container", "flex", "flex-column", i.Tags);
+                container.classList.add("card-container", "flex", "flex-column", normalizeString(i.Tags));
         
             //image container
             let imgContainer = document.createElement("div");
@@ -51,8 +51,8 @@ function createList(uri){
         for (let i of tags) {
             let tag = document.createElement("button");
                 tag.innerText = i.Tags;
-                tag.setAttribute("id", i.Tags)
-                tag.setAttribute("onclick", ("filter(" + i.Tags + ")"));
+                tag.setAttribute("id", normalizeString(i.Tags));
+                tag.setAttribute("onclick", ("filter(" + normalizeString(i.Tags) + ")"));
                 document.getElementById("filter-list").appendChild(tag)
         };
 
