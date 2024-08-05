@@ -93,6 +93,7 @@ p{font-size: small;}
 .card-container{
     justify-content: space-between;
     height: auto;
+    max-height: 18rem;
     width: 10.2rem;
     padding: 1rem;
     margin: 1rem 0;
