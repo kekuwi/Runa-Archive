@@ -106,9 +106,9 @@ let listLink = document.createElement("a");
     listLink.innerText = ("Edit");
     listLink.href = ("https://github.com/kekuwi/RA-Edit");
 
-let discordLink = document.createElement("a");
-    discordLink.innerText = ("Discord");
-    discordLink.href = ("https://discord.gg/GdfHVZ6Z33")
+let footerDiscordLink = document.createElement("a");
+    footerDiscordLink.innerText = ("Discord");
+    footerDiscordLink.href = ("https://discord.gg/GdfHVZ6Z33")
 
     
 
@@ -127,4 +127,4 @@ rightSide.appendChild(archiveName);
 rightSide.appendChild(feedbackLink);
 rightSide.appendChild(projectLink);
 rightSide.appendChild(listLink);
-rightSide.appendChild(discordLink);
+rightSide.appendChild(footerDiscordLink);
