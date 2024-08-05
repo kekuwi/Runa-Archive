@@ -51,6 +51,7 @@ function createList(uri){
         for (let i of tags) {
             let tag = document.createElement("button");
                 tag.innerText = i.Tags;
+                tag.classList.add("filter-button")
                 tag.setAttribute("id", normalizeString(i.Tags));
                 tag.setAttribute("onclick", ("filter(" + normalizeString(i.Tags) + ")"));
                 document.getElementById("filter-list").appendChild(tag)

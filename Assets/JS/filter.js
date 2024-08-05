@@ -18,6 +18,22 @@ function filter(tag) {
     for (const i of filter) {
         i.classList.toggle("hide");
     };
+
+    resetFilter();
+    let selectedFilter = document.getElementById(selector);
+        selectedFilter.classList.remove("filter-button");
+        selectedFilter.classList.add("filter-button-active");
+
+    document.getElementById("selected-filter").innerHTML = (tag.outerText); // changes text depend on which tag is active
+};
+
+function resetFilter() {
+    let filterButton = document.getElementsByClassName("filter-button-active");
+
+    for (const i of filterButton) {
+        i.classList.remove("filter-button-active");
+        i.classList.add("filter-button");
+    };
 };
 
 function normalizeString(string) {
@@ -26,4 +42,4 @@ function normalizeString(string) {
     let stringWithoutSpace = stringWithoutSlash.replace(/\s+/g, '');
     let stringWithoutDash = stringWithoutSpace.replace(/-/g, '');
     return stringWithoutDash;
-} ;
+};

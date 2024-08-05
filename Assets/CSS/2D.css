@@ -52,7 +52,7 @@ p{font-size: small;}
 
 .category{
     width: auto;
-    margin: 2rem;
+    margin: 2rem 0 0 0;
     gap: 1vw;
     align-items: center;
 }
@@ -134,12 +134,15 @@ p{font-size: small;}
 /*////////////////////////////////////////////////////////////////////*/
 hr{
     width: 80vw;
-    border-top: 0.15rem solid var(--extra);
+    border-top: 0.15rem solid var(--s-bg-color);
     border-radius: 9999px;
 }
 
 .filter{
+    color: var(--extra);
     width: 60vw;
+    margin: 1rem 0 0.2rem 0;
+    align-items: center;
 }
 
 .filter-overlay{
@@ -159,16 +162,60 @@ hr{
     justify-content: center;
     min-width: 20vw;
     min-height: 20vh;
-    max-width: 60vw;
+    max-width: 80vw;
     max-height: 60vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1e1e1e;
-    padding: 1rem;
+    background: var(--p-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
     z-index: 2;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.filter-button{
+    color: var(--p-fn-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.3rem 1rem;
+    background-color: var(--s-bg-color);
+    border: 0.16vw solid var(--extra);
+    border-radius: 99999px;
+    margin: 0.5rem;
+    transition-duration: 50ms;
+}
+
+.filter-button-active{
+    color: var(--s-bg-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.3rem 1rem;
+    background-color: var(--extra);
+    border-radius: 99999px;
+    margin: 0.5rem;
+    transition-duration: 50ms;
+}
+
+.filter-button:hover{
+    scale: 1.05;
+    background-color: var(--s-fn-color);
+    transition-duration: 50ms;
+}
+
+.filter-button:active{
+    scale: 0.9;
+    background-color: var(--p-bg-color);
+    transition-duration: 50ms;
+}
+
+#selected-filter{
+    color: aqua;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 1rem;
 }
 
 .hide{
