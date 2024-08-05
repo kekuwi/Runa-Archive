@@ -106,6 +106,10 @@ let listLink = document.createElement("a");
     listLink.innerText = ("Edit");
     listLink.href = ("https://github.com/kekuwi/RA-Edit");
 
+let listLink = document.createElement("a");
+    listLink.innerText = ("Discord");
+    listLink.href = ("https://discord.gg/GdfHVZ6Z33")
+
     
 
 // Assign
