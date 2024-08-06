@@ -40,7 +40,7 @@ let runaName = document.createElement("h2");
             {
                 user: "runa",
                 socialMedia: "Twitch",
-                link: "https://github.com/kekuwi",
+                link: "https://www.twitch.tv/runapenumbra",
                 icon: "https://static-00.iconduck.com/assets.00/twitch-icon-2048x2048-tipdihgh.png"
             },
             {
