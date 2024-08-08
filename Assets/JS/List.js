@@ -18,6 +18,7 @@ function createList(uri){
         
             //img image
             let image = document.createElement("img");
+                image.setAttribute("loading", "lazy");
                 image.setAttribute("src", i.Image);
                 image.classList.add("card-image");
                 imgContainer.appendChild(image);
