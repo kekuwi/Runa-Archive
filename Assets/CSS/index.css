@@ -126,6 +126,7 @@
   }
 
 :root{
+    color: #ededed;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     --p-bg-color: #2A2A2A;
@@ -138,8 +139,7 @@
 /*/////////////////////////////// Element ///////////////////////////////*/
 /*//////////////////////////////////////////////////////////////////////*/
 
-body{
-    color: var(--p-fn-color);
+body{ 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -178,34 +178,6 @@ hr{opacity: 0;}
 /*//////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////// Class ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
-.hero{
-    width: 100%;
-    background-color: var(--p-bg-color);
-}
-
-.hero-notice{
-    width: 60%;
-    padding: 0;
-    margin: 4rem;
-    background-image: linear-gradient(180deg, var(--p-bg-color), var(--s-bg-color));
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-}
-.hero-notice-container{
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-mid{
-    width: 60%;
-}
-.hero-notice img{
-    margin: 0;
-    width: 200px;
-    height: 240px;
-    object-fit: cover;
-}
-
 
 .category{
     background-color: var(--s-bg-color);
@@ -252,6 +224,49 @@ hr{opacity: 0;}
     text-justify: center;
 }
 
-/*///////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////// ID ///////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////// Hero ////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d590b0;
+}
+
+.hero{
+    width: 100%;
+    background-color: var(--background-50);
+}
+.hero-container{
+    background-color: var(--primary-500);
+    width: 75%;
+    height: 8rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 150%;
+    height: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.scroll-text span{
+    position: absolute;
+    top: -1.5;
+    animation: scrollText 8s cubic-bezier(1.000, 0.000, 0.010, 0.995) infinite;
+}
+
+@keyframes scrollText {
+    0%, 20% {top: 0;}
+    20%, 40% {top: -1.5rem;}
+    40%, 60% {top: -3rem;}
+    60%, 80% {top: -4.5rem;}
+    80%, 100% {top: -6rem;}
+}
