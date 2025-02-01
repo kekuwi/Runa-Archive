@@ -265,8 +265,8 @@ h3 {
 
 @keyframes scrollText {
     0%, 20% {top: 0;}
-    20%, 40% {top: -1.5rem;}
-    40%, 60% {top: -3rem;}
-    60%, 80% {top: -4.5rem;}
-    80%, 100% {top: -6rem;}
+    30%, 40% {top: -1.5rem;}
+    50%, 60% {top: -3rem;}
+    70%, 80% {top: -4.5rem;}
+    90%, 100% {top: -6rem;}
 }
