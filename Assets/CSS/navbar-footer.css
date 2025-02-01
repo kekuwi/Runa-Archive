@@ -75,10 +75,11 @@ a img{
 /*//////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////// footer ///////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
-h2{
-    height: 40px;
+h5{
+    height: auto;
 }
 footer{
+    background-color: var(--background-900);
     width: 100%;
     justify-content: center;
     padding: 2rem 0;
@@ -87,17 +88,30 @@ footer{
     justify-self: end;
     margin: 16px 0;
 }
-.social-icon{
-    width: 24px;
-    height: 24px;
-    border-radius: 0.5rem;
-    display: block;
-}
 footer a{
     margin: 8px;
 }
 
+.footer-link{
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.footer-container{
+    align-items: flex-start;
+    margin: 1.5rem;
+}
 #footer{
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 500px){
+    .footer-link{
+        flex-direction: column;
+    }
+    #footer{
+        flex-direction: row;}
+};

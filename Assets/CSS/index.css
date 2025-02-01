@@ -144,10 +144,6 @@ body{
     text-justify: center;
 }
 
-footer{
-    background-color: var(--p-bg-color);
-}
-
 section{
     width: 100%;
     display: flex;
