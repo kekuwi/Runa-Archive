@@ -264,6 +264,7 @@ h3 {
 }
 .scrolling-font{
     background: linear-gradient(0deg, rgba(152,65,150,1) 0%, rgba(207,114,218,1) 35%, rgba(149,172,210,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
