@@ -129,11 +129,6 @@
     color: #ededed;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
-    --p-bg-color: #2A2A2A;
-    --s-bg-color: #1e1e1e;
-    --p-fn-color: #ededed;
-    --s-fn-color: #b3b3b3;
-    --extra: #e6ddc1;
 }
 /*////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////// Element ///////////////////////////////*/
@@ -162,7 +157,7 @@ section{
 }
 
 p{  
-    color: var(--s-fn-color);
+    color: #ededed;
     font-weight: 400;
     font-size: 16px;
     line-height: 170%;
@@ -176,52 +171,63 @@ i{font-style: italic;}
 
 hr{opacity: 0;}
 /*//////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////// Class ///////////////////////////////*/
+/*///////////////////////////// Category //////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 
 .category{
-    background-color: var(--s-bg-color);
+    background-color: var(--secondary-400);
     padding: 2rem 0;
 }
 .category-container{
-    width: 60%;
-    margin: 2rem;
-    flex-wrap: wrap;
+    width: 100vw;
+    height: 15rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 0rem;
 }
 .item-category{
-    width: 15vw;
-    height: 15vw;
-    margin: 0;
-    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem;
+    flex-shrink: 0;
+    
 }
-
 .item-category img{
     width: 100%;
     height: 100%;
+    position: relative;
+    top:-100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 2rem;
-}
-.item-category-gradient{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 2rem;
-    background-image: linear-gradient(0deg, #000000bd, #ffffff00);
+    border-radius: 1.5rem;
+    z-index: 0;
 }
 .item-category p{
     font-size: 1.75rem;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: -130%;
     left: 50%;
     transform: translateX(-50%);
     text-justify: center;
+    z-index: 2;
+}
+
+.item-category-gradient{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 1.5rem;
+    background-image: linear-gradient(0deg, #000000bd, #ffffff00);
+    z-index: 1;
+}
+.category-container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
