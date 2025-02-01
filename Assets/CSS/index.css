@@ -262,6 +262,11 @@ h3 {
     top: -1.5;
     animation: scrollText 8s cubic-bezier(1.000, 0.000, 0.010, 0.995) infinite;
 }
+.scrolling-font{
+    background: linear-gradient(0deg, rgba(152,65,150,1) 0%, rgba(207,114,218,1) 35%, rgba(149,172,210,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 @keyframes scrollText {
     0%, 20% {top: 0;}
