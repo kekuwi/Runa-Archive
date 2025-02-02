@@ -115,5 +115,9 @@ footer a{
         flex-direction: column;
     }
     #footer{
-        flex-direction: row;}
+        flex-direction: row;
+    }
+    .footer-container{
+        align-items: center;
+    }
 };
