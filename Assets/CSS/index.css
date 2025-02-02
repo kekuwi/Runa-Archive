@@ -293,6 +293,7 @@ h3 {
 
 .about{
     height: 100%;
+    min-height: 15rem;
     background-color: var(--background-50);
     padding: 2rem 0;
 }
