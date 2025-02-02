@@ -185,6 +185,14 @@ hr{opacity: 0;}
     align-items: center;
     gap: 0rem;
 }
+@media screen and (min-width: 500px){
+    .category-container{
+        width: 70vw;
+        flex-wrap: wrap;
+        height: auto;
+        overflow-y: visible;
+    }
+}
 .item-category{
     width: 12rem;
     height: 12rem;
