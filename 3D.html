@@ -26,18 +26,22 @@
 </head>
 <body>
     <script src="Assets/JS/navbar.js"></script>
+    <script src="Assets/JS/dark-mode.js"></script>
+    <script src="Assets/JS/category.js"></script>
+
+    <script src="https://kit.fontawesome.com/d14c9cf822.js" crossorigin="anonymous"></script>
 
     <section class="flex flex-center">
         <div class="main flex flex-center flex-column">
-            <div class="category flex flex-row flex-space">
-                <h2>category:</h2>
-                <div class="category-buttons flex flex-row flex-space">
-                    <button onclick="location.href='./2D'" class="category-item">2D</button>
-                    <button class="active-category">3D</button>
-                    <button onclick="location.href='./Assets'" class="category-item">Assets</button>
-                    <button class="category-item">WIP</button>
-                    <button class="category-item">WIP</button>
-                    <button class="category-item">WIP</button>
+            <div class="category">
+                <div onclick="categoryDropDown()" class="category-button flex flex-row flex-space">
+                    <h2>Category</h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div id="categoryDropDown" class="category-list">
+                    <a onclick="location.href='./2D'" class="category-item">2D</a>
+                    <a onclick="location.href='./3D'" class="category-item">3D</a>
+                    <a onclick="location.href='./Assets'" class="category-item">Assets</a>
                 </div>
             </div>
             <div class="filter flex flex-row flex-left">

@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="Assets/CSS/navbar-footer.css">
         <link rel="stylesheet" href="Assets/CSS/index.css">
 
+        <script src="https://kit.fontawesome.com/d14c9cf822.js" crossorigin="anonymous"></script>
+        
+
         <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
@@ -27,25 +30,30 @@
 
     <body>
         <script src="Assets/JS/navbar.js"></script>
+        <script src="Assets/JS/dark-mode.js"></script>
 
         <section class="hero flex flex-center">
-            <div class="hero-notice">
-                <div class="hero-notice-container flex">
-                    <img src="https://lookimg.com/images/2024/07/06/Ql2TGU.png" alt="kekuwi's avatar"> <!-- i need an artist, but i'm broke TvT  -->
-                    <div class="hero-mid">
-                        <h2>Welcome to Runa’s Archive!</h2>
-                        <hr>
-                        <p>Various assets (overlays, props, software, etc.) for streamers and vtubers.</p>
-                        <p><i>We encourage supporting any artists and developers listed here!</i></p>
+            <div class="hero-container flex flex-column flex-between">
+                <h1>Runa's Archive</h1>
+                <div>
+                    <h3>Free to Use Vtuber</h3>
+                    <div class="scroll-text">
+                        <span id="scrolling-text">
+                            <h3 class="scrolling-font">Assets</h3>
+                            <h3 class="scrolling-font">Tools</h3>
+                            <h3 class="scrolling-font">Software</h3>
+                            <h3 class="scrolling-font">Tutorials</h3>
+                            <h3 class="scrolling-font">Assets</h3>
+                        </span>
                     </div>
-                    <img src="https://lookimg.com/images/2024/07/06/Ql2hUe.png" alt="Runa Penumbra's Avatar">
+                    <h3>All in One Place!</h3>
                 </div>
             </div>
         </section>
 
         <section class="category flex flex-center flex-column">
             <h2 id="category">Category</h2>
-            <div class="category-container flex">
+            <div class="category-container flex flex-row">
                 <a href="./2D" class="item-category">
                     <div class="item-category-gradient"></div>
                     <img src="https://cdn.akamai.steamstatic.com/steam/apps/1325860/extras/steam_akari_gif.gif?t=1682724343" alt="Vtube Studio Mascot gif">
@@ -76,26 +84,31 @@
                     <img style="background-color: rgb(15, 15, 15);" src="https://reactive.fugi.tech/_astro/logo.BYLT2Yn_.png" alt="Reactive by Fugitech logo">
                     <p>Extras</p>
                 </div> -->
-                <div class="item-category">
+                <a class="item-category">
                     <div class="item-category-gradient"></div>
                     <img style="background-color: rgb(202, 202, 202);" src="https://cdn-icons-png.freepik.com/512/8090/8090268.png" alt="Work In Progress Sign">
                     <p>WIP</p>
-                </div>
-                <div class="item-category">
+                </a>
+                <a class="item-category">
                     <div class="item-category-gradient"></div>
                     <img style="background-color: rgb(202, 202, 202);" src="https://cdn-icons-png.freepik.com/512/8090/8090268.png" alt="Work In Progress Sign">
                     <p>WIP</p>
-                </div>
-                <div class="item-category">
+                </a>
+                <a class="item-category">
                     <div class="item-category-gradient"></div>
                     <img style="background-color: rgb(202, 202, 202);" src="https://cdn-icons-png.freepik.com/512/8090/8090268.png" alt="Work In Progress Sign">
                     <p>WIP</p>
-                </div>
+                </a>
             </div>
         </section>
-    
+
+        <section class="about flex flex-center flex-column">
+            <h2>Special Thanks to all the creator out there that made this Project Possible </h2>
+        </section>
+
+
         <footer class="flex">
-            <div class="flex flex-row" id="footer">
+            <div id="footer">
                 <script src="Assets/JS/footer.js"></script>
             </div>
         </footer>

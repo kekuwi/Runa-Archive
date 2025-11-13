@@ -9,7 +9,7 @@ function createList(uri){
             let container = document.createElement("a"); 
                 container.href = (i.Url);
                 container.target = ("_blank");
-                container.classList.add("card-container", "flex", "flex-column", normalizeString(i.Tags));
+                container.classList.add("card-container", "flex", normalizeString(i.Tags));
         
             //image container
             let imgContainer = document.createElement("div");
