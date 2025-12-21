@@ -172,7 +172,7 @@ hr{opacity: 0;}
 
 .category{
     background-color: var(--secondary-400);
-    padding: 2rem 0;
+    padding: 10vh 0;
 }
 .category-container{
     width: 100vw;
@@ -293,7 +293,7 @@ h3 {
 
 .about{
     height: 100%;
-    min-height: 15rem;
+    min-height: 40vh;
     background-color: var(--background-50);
     padding: 2rem 0;
 }
